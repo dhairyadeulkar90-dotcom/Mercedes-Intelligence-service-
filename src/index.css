@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  /* Scrollbar styles matching the futuristic workspace theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d111a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #232d42;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00dff0;
+  }
+}
+
+@keyframes magicalGlow {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 223, 255, 0);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    box-shadow: 0 0 30px 4px rgba(0, 223, 255, 0.25);
+    border-color: rgba(0, 223, 255, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(0, 223, 255, 0);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.magical-highlight-glow {
+  animation: magicalGlow 1.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}

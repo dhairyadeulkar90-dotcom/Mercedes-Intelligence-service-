@@ -1,0 +1,6 @@
+{
+  "name": "Mercedes Showroom",
+  "description": "An interactive Mercedes-Benz car showroom featuring real-time customizable 3D models, performance specifications, and test drive booking capabilities.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
