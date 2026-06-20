@@ -218,7 +218,6 @@ export default function AiConcierge({ selectedCar, selectedColor, selectedWheel 
       {/* Header and Controls block */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <span className="text-[10px] font-mono text-white/50 tracking-[0.3em] uppercase block mb-1">MERCEDES INTELLIGENCE</span>
           <h3 className="text-2xl font-light text-white tracking-tight uppercase flex items-center gap-3">
             <span>Mercedes Intelligence</span>
             <div className="w-8 h-8 rounded-full overflow-hidden border border-white/25 bg-white/10 flex items-center justify-center p-0.5 shadow-[0_0_15px_rgba(255,255,255,0.15)] shrink-0 transition-transform hover:scale-110 duration-300">
@@ -240,7 +239,7 @@ export default function AiConcierge({ selectedCar, selectedColor, selectedWheel 
         {/* Suggested Queries Spec Deck */}
         <div className="lg:col-span-4 flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <span className="text-[10px] font-mono tracking-[0.2em] text-white/50 uppercase">Suggested Prompts</span>
+            <span className="text-[10px] font-mono tracking-[0.2em] text-white/50 uppercase">FAQ</span>
             <p className="text-xs text-gray-400 font-light italic leading-normal">
               Accelerate your knowledge with technical questions optimized for the active **{selectedCar.name}** configuration.
             </p>
